@@ -3,7 +3,7 @@
 데릭의 추천으로 내 계산기 프로젝트에 UITest 를 해보려고 한다. 
 Unit Test를 추가해줬을 때와 같은 방법으로, UI Test 를 추가 해주었다. 
 "UITests" 파일과 "UITestsLaunchTests" 파일 두개가 생성되었다.
-![](https://i.imgur.com/zH55K8X.png)
+<img src="https://i.imgur.com/zH55K8X.png" width="240" height="60"/>
 ![](https://i.imgur.com/EfrVL8N.png)
 ![](https://i.imgur.com/dSBwd7f.png)
 
