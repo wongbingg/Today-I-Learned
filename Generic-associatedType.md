@@ -19,6 +19,7 @@ extension Stack: SuffixableContainer {
         }
         return result
     }
-}```
+}
+```
 
 작성한 프로토콜을 Stack에서 채택하게 되면 맨 처음에 뜨는 것이 `typealias Suffix = ` 이다. 이 안에 타입을 적어주게 되면 그에 맞게 `func suffix(_size: Int) -> ` 에 반환값이 지정된다.
