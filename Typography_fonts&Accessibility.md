@@ -66,3 +66,52 @@ SF Compact 가 watchOS 의 시스템 폰트이다. 그리고 앱들이 NY또한 
 시각적 보조
 
 시각 장애인을 위해 앱을 만들 때 Accessibility label을 설정해야 한다. 그에 대한 네이밍 또한 음성으로 나올 때 의 문맥을 최대한 고려하고, 불필요한 설명을 추가하지 않는다 최대한 간결하게 , 하지만 이모티콘 같은 경우 이미지에 대한 자세한 설명을 나타내는 것을 더 선호한다.
+
+접근성을 고려하여 손쉬운 사용을 선사한다. 
+
+## Font Size
+내장되어있는 기본 Text Style 
+- title1
+- title2
+- title3
+- caption
+- headline 
+- 등등....
+
+이 font들을 가진 Label 은 모두 Dynamic Type에 Automatically Adjust Font 체크를 할 수 있다.!
+![](https://i.imgur.com/1vDbYmY.png)
+여기 체크를 하게 되면 사용자의 글자크기 조절에 유동적으로 사이즈를 변화시킬 수 있다, 또는 코드상에서 
+```swift=
+lebel.adjustFontForContentSizeCategory = true
+```
+이렇게 속성을 true로 만들어 주면 된다. 
+
+<table><tr><td valign="top" width="30%">
+
+![](https://i.imgur.com/4ODZdGd.png)
+
+
+</td><td valign="top" width="50%">
+
+### inspectors 에서 변경 가능한 요소
+*- Accessibility Label*
+    *- Hint*
+*- Traits*
+
+### 기존에 VoiceOver를 실행했을 때 읽어오는 Accessibility Label을 자연스럽게 만들어 주었다. 
+    "딸기" -> "딸기 재고"
+    "십" -> "열개" (자동으로 로컬라이징이 된다.)
+### Traits 속성
+    "Static Text" 은 읽어오는 텍스트에 해당하지 
+    않는 것 같다. 하지만 Button과 Header 는 접미사처럼
+    붙어서 읽어진다. Button의 경우 자연스럽지만 .Header
+    의 경우 듣는이에게 불편함을 초래한다. 
+    
+</td></tr></table>
+"맛있는 쥬스를 만들어 드려요 , header" -> 변경실패
+"딸기" -> "딸기 재고"
+"십" -> "열 개"
+
+![](https://i.imgur.com/to9y8QL.png)
+
+
